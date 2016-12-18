@@ -1,7 +1,7 @@
 angular.module( 'micSoundVisual', [
         'angular-p5'
     ] )
-    .factory( 'micSoundVisual', [ 'p5', '$rootScope', function( p5, $rootScope ) {
+    .factory( 'SoundVisual', [ 'p5', '$rootScope', function( p5, $rootScope ) {
         return function( p ) {
             var mic,fft,canvas;
             var size= 512;  //power of 2; => 32 , <= 1024
